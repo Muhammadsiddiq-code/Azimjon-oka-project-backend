@@ -43,8 +43,8 @@ sequelize
     // Auto-seed a default admin if none exist
     const adminCount = await Admin.count();
     if (adminCount === 0) {
-      const defaultEmail = "admin@example.com";
-      const defaultPassword = "admin123";
+      const defaultEmail = "admin@gmail.com";
+      const defaultPassword = "123";
       await Admin.create({
         email: defaultEmail,
         password: defaultPassword,
